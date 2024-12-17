@@ -26,7 +26,7 @@ const AuthForm = ({title,handleSubmit}) => {
                 <input
                     type='password'
                     placeholder='enter your password'
-                    onChange={(e)=>setEmail(e.target.value)}
+                    onChange={(e)=>setPassword(e.target.value)}
                     required
                 />
             </div>

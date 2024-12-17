@@ -1,6 +1,7 @@
 import React from 'react'
 import AuthForm from './AuthForm';
 import { signIn } from './authService';
+import './Auth.css';
 
 const SignIn = () => {
     

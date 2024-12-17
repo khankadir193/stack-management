@@ -1,5 +1,7 @@
 import React from 'react'
 import { signUp } from './authService';
+import AuthForm from './AuthForm';
+import './Auth.css';
 
 const SignUp = () => {
     const handleSignUp = async (email, password) => {
