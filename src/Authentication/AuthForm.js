@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 
-const AuthForm = () => {
+const AuthForm = ({title,handleSubmit}) => {
     const [email,setEmail] = useState();
     const [password,setPassword] = useState();
 
+    const onSubmit = (e)=>{
+        e.preventDefault();
+        handleSubmit(email,password);
+    }
+
     return (
         <form onSubmit={onSubmit} className='auth-form'>
-            {/* <h2>{title}</h2> */}
-            <div>
+            <h2>{title}</h2>
+            <div className='form-group'>
                 <label>Email:</label>
                 <input
                     type='email'
@@ -25,7 +30,7 @@ const AuthForm = () => {
                     required
                 />
             </div>
-            <button type='submit' className='btn'>Submit</button>
+            <button type='submit' className='btn'>{title}</button>
         </form>
     )
 }
