@@ -1,0 +1,26 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.container {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.stack-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
