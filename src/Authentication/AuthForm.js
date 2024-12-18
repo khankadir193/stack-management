@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './Auth.css';
+import { useNavigate } from 'react-router-dom';
 
 const AuthForm = ({ title, handleSubmit }) => {
+    console.log('title.???????????????',title);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -11,8 +14,13 @@ const AuthForm = ({ title, handleSubmit }) => {
     };
 
     const onNavigate = (e)=>{
-        console.log('e...navigate..',e);
-    }
+        console.log('e....?',e);
+        if(e === 'SignUp'){
+            navigate('/signup')
+        }else{
+            navigate('/');
+        }
+    };
 
     return (
         <form onSubmit={onSubmit} className='auth-form'>

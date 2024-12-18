@@ -8,7 +8,7 @@ export const signUp = (email,password)=>{
 
 //signin user
 export const signIn = (email,password)=>{
-    return signInWithEmailAndPassword(email,password);
+    return signInWithEmailAndPassword(auth,email,password);
 };
 
 //signout user
